@@ -50,7 +50,7 @@ static void set_battery_symbol(lv_obj_t *icon, struct battery_status_state state
 
 #if IS_ENABLED(CONFIG_USB_DEVICE_STACK)
     uint8_t level = state.level;
-    bool usb_present = state.usb_present
+    bool usb_present = state.usb_present;
     uint8_t stage = 0;
 
     if (level > 87) {
