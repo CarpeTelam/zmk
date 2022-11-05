@@ -54,15 +54,15 @@ static void set_battery_symbol(lv_obj_t *icon, struct battery_status_state state
     uint8_t stage = 0;
 
     if (level > 87) {
-        stage = 5
+        stage = 5;
     } else if (level > 62) {
-        stage = 4
+        stage = 4;
     } else if (level > 37) {
-        stage = 3
+        stage = 3;
     } else if (level > 12) {
-        stage = 2
+        stage = 2;
     } else if (level > 5) {
-        stage = 1
+        stage = 1;
     }
 
     // check if there is a change requiring an update
